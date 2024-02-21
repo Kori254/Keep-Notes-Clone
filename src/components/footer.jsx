@@ -1,5 +1,5 @@
 import React from "react";
-import reactDOM from 'react-dom';
+
 
 function Footer(){
     var date = new Date

@@ -1,15 +1,21 @@
 import React from "react";
-import reactDOM from 'react-dom';
 import Header from "./Header";
-import Note from './note';
+import Note from './Note';
 import Footer from './footer';
+import List from "./Notelists";
 
+console.log(List);
 function App(){
 
     return <div>
     <Header />
-    <Note />
-    <Note />
+    {List.map(item=><Note 
+        key= {item.id}
+        title={item.title}
+        content={item.Content}
+
+    />)}
+    
     <Footer />
     </div>;
 }
